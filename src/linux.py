@@ -26,3 +26,6 @@ try:
 except Exception as e:
     print("Issue installing! The download was successful, but we couldn't install it. If this continues to not work, run discord.deb that was downloaded yourself.")
     print("Error: " + str(e))
+print("Great! Want Vencord?")
+input("If you don't want Vencord (which is a Client Modification and is bannable!), exit the script or run ctrl+c.")
+os.system('sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"')
